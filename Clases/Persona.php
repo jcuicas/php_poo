@@ -56,8 +56,18 @@ interface iGenerarCarnet
     public function crearCarnet(): string;
 }
 
+trait MallaCurricular
+{
+    public function pensum(): string
+    {
+        return 'Plan de estudios de una carrera universitaria.' . "\n";
+    }
+}
+
 class Estudiante extends Persona implements iGenerarCarnet
 {
+    use MallaCurricular;
+
     public function crearCarnet(): string
     {
         return 'Carnet de color Rojo Estudiante' . "\n";

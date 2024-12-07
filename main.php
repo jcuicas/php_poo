@@ -42,6 +42,7 @@ Util::encabezado('datos del estudiante',40);
 echo $estudiante->__toString();
 echo $estudiante->getEdad();
 echo $estudiante->getCedula();
+echo $estudiante->pensum();
 echo $estudiante->crearCarnet();
 
 Util::encabezado('datos del docente',40);
